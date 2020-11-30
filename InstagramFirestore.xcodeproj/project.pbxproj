@@ -21,6 +21,10 @@
 		750BA6EF256CAD4900503AF8 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6EE256CAD4900503AF8 /* FeedCell.swift */; };
 		750BA6F3256CAE9900503AF8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750BA6F2256CAE9900503AF8 /* Extensions.swift */; };
 		750BA6F7256CB25200503AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750BA6F6256CB25200503AF8 /* Assets.xcassets */; };
+		7555E303256D9D110011E4D5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555E302256D9D110011E4D5 /* LoginController.swift */; };
+		7555E307256D9D220011E4D5 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555E306256D9D220011E4D5 /* RegistrationController.swift */; };
+		7555E30A256DB0880011E4D5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555E309256DB0880011E4D5 /* CustomTextField.swift */; };
+		7555E30D256DBA700011E4D5 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555E30C256DBA700011E4D5 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		750BA6EE256CAD4900503AF8 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		750BA6F2256CAE9900503AF8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		750BA6F6256CB25200503AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7555E302256D9D110011E4D5 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		7555E306256D9D220011E4D5 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		7555E309256DB0880011E4D5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7555E30C256DBA700011E4D5 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		750BA6D2256C89D700503AF8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7555E301256D9CF30011E4D5 /* Authentication */,
 				750BA6D7256C8A7D00503AF8 /* MainTabController.swift */,
 				750BA6DA256C8BF300503AF8 /* FeedController.swift */,
 				750BA6DD256C8C0500503AF8 /* SearchController.swift */,
@@ -120,6 +129,7 @@
 		750BA6D3256C89D900503AF8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7555E30C256DBA700011E4D5 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				750BA6EE256CAD4900503AF8 /* FeedCell.swift */,
+				7555E309256DB0880011E4D5 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +148,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7555E301256D9CF30011E4D5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7555E302256D9D110011E4D5 /* LoginController.swift */,
+				7555E306256D9D220011E4D5 /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,10 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7555E30A256DB0880011E4D5 /* CustomTextField.swift in Sources */,
 				750BA6C0256C890900503AF8 /* ViewController.swift in Sources */,
+				7555E303256D9D110011E4D5 /* LoginController.swift in Sources */,
 				750BA6E1256C8C1700503AF8 /* ImageSelectorController.swift in Sources */,
 				750BA6E4256C8C2600503AF8 /* NotificationsController.swift in Sources */,
 				750BA6DE256C8C0500503AF8 /* SearchController.swift in Sources */,
+				7555E30D256DBA700011E4D5 /* AuthenticationViewModel.swift in Sources */,
 				750BA6EF256CAD4900503AF8 /* FeedCell.swift in Sources */,
 				750BA6BC256C890900503AF8 /* AppDelegate.swift in Sources */,
 				750BA6E7256C8C3100503AF8 /* ProfileController.swift in Sources */,
@@ -220,6 +243,7 @@
 				750BA6D8256C8A7D00503AF8 /* MainTabController.swift in Sources */,
 				750BA6F3256CAE9900503AF8 /* Extensions.swift in Sources */,
 				750BA6BE256C890900503AF8 /* SceneDelegate.swift in Sources */,
+				7555E307256D9D220011E4D5 /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
